@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>.::Programação Web::.</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<div class="topo">
+		<img src="img/topo_aula.png" alt="Topo">
+	</div>
+	<br><br><br><br>
+	<h1>TECTREINAMENTOS - PROGRAMAÇÃO WEB COM PHP</h1><hr><br>
+
+	<div class="pesquisa">
+		<form method="get" action="recebe.php">
+			<h6>Prof. Wagner Cardoso</h6>
+			Pesquise no Site: &nbsp<input type="text" name="pesquisa">
+			<input type="submit" name="enviar" value="Pesquisar">
+		</form>
+	</div>
+	<h2>Manual de Uso - Introdução das Aplicações utilizadas</h2>
+	<p>No item acima, vamos realizar uma pesquisa onde as informações coletadas pela caixa de texto serão enviadas por um formulário (método POST) para uma página de tratamentos denominada receb.php.<br>Lá serão coletadas as variáveis que por meio de um Switch vão perceber qual o dado coleto e vão relacionar a uma determinada resposta.<br><br> No item abaixo também haverá uma coleta de informações via formulário, porém neste momento em método POST para esconder as informações da URL.<br>Essas informações serão convertidas em variáveis que serão tratadas em uma estrutura de decisão onde caso a renda registrada seja maior ou igual a 2.000 o crédit será aprovado, caso não o crédito será rcusado.<br></p>
+	<div class="conteudo">
+		<fieldset>
+			<legend><strong>Calcule aqui sua Possibilidade de Crédito</strong></legend>
+				<br><form method="post" action="credito.php">
+
+					Nome:&nbsp <input type="text" name="nome">
+					Renda: &nbsp <input type="number" name="renda">
+					<input type="submit" name="enviar" value="Calcular Crédito">
+
+				</form><br>
+
+
+		</fieldset><br><br><br>
+		<h2>Introdução ao Formulário de Orçamento</h2>
+		<p>Para finalizar vamos utilizar o formulário abaixo para que seja possível realizar um orçamento de serviços.<br> Nesta simulação vamos apresentar uma opção de impressão da página de orçamentos.<br></p>
+
+		<fieldset>
+			<legend><strong>Faça seu Orçamento</strong></legend>
+				<br><form method="post" action="orcamento.php">
+
+					<p>Data do Orçamento <input type="date" name="data"></p>
+					<p>Tempo de Garantia (em meses) <input type="number" name="garantia" min="1" max="6"></p>
+					<p> Tipo de Serviço: <select name="servico">
+						
+						<option>conserto</option>
+						<option>formatação</option>
+						<option>outros</option>
+					</select>
+
+					
+
+					<p>Produto: &nbsp <input type="text" name="produto"></p>
+					<p>Marca: &nbsp <input type="text" name="marca"></p>	
+
+					<br><input type="submit" name="enviar" value="Realizar Orçamento">
+
+
+					</select> 
+					
+
+				</form><br>
+
+
+		</fieldset>
+
+	</div>
+
+	<div class="rodape">
+		<h2>TECTREINAMENTOS - PROGRAMAÇÃO WEB COM PHP</h2>
+	</div>
+	<footer>
+		<h3>Todos os direitos reservados - Desenvolvido por TecTreinamentos</h3>
+	</footer>
+
+
+
+
+</body>
+</html>
