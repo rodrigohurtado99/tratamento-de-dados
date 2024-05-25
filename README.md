@@ -1,6 +1,7 @@
 # Tratamento de dados com PHP
 
-* Um programa com alguns tratamentos de dados em PHP, OBS: projeto ainda em fase de desenvolvimento...
+* Um programa com alguns tratamentos de dados em PHP
+* OBS: projeto ainda em fase de desenvolvimento...
 
 
 ## Funcionalidades
